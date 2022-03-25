@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+    --bg: #FCFCFC;
+    --bg-navbar: #5b8efb;
+    --color-headings: #909090;
+    --color-text: #4d4d4d;
+    --bg-box: white;
+    --border: #cccccc;
+    --btn-primary: #007bff
+}
+
+html[data-theme=dark] {
+    --bg: #2d2d2d;
+    --bg-navbar: #434343;
+    --color-headings: white;
+    --color-text: #ACACAC;
+    --bg-box: #434343;
+    --border: rgb(63, 47, 47);
+    --btn-primary: #3694ff
+}
+
+html.transition,
+html.transition *,
+html.transition :after,
+html.transition :before {
+    transition: all 750ms !important;
+    transition-delay: 0 !important
+}
+
+body {
+    background-color: var(--bg)
+}
+
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+.navbar {
+    background-color: var(--bg-navbar);
+    z-index: 9999999;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px
+}
+
+.navbar-brand {
+    font-size: 32px;
+    font-family: Orbitron, sans-serif;
+    font-weight: 200
+}
+
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    text-shadow: 2px 2px 5px #000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 992px){
+     .navbar {
+        transition: .3s ease-in-out;
+        height: 60px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+        transition: .3s ease-in-out;
+        font-family: Quicksand, sans-serif;
+        letter-spacing: .8px;
+    }
+
+    .wrap-kontak{
+        width:23%;
+        height: 100%;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        top:0px;
+        background-color:#e7e7e8;
+        margin-top: 60px;
+    }
+
+    .search{
+        width:90%;
+        margin-left: 5%;
+        height: 40px;
+        border-radius: 50px;
+        background-color:yellow;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    .kontak{
+        width: 100%;
+        height: 60px;
+        background-color:navy;
+        padding:5px;
+        display: inline-block;
+        border-bottom: 1px solid white;
+    }
+
+    .profil{
+        width:50px;
+        float: left;
+        margin-right: 8px;
+    }
+
+    .nama-kontak{
+        color:white;
+        font-size: 17px;
+    }
+
+    .wrap-pesan{
+        position: fixed;
+        background-color:#e7e7e8;
+        right: 0px;
+        bottom: 0px;
+        top:0px;
+        height: 100%;
+        width:77%;
+    }
+}
